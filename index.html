@@ -410,6 +410,16 @@
                                     <span class="skills_percentage skills_hibernate"></span>
                                 </div>
                             </div>
+
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">Swagger</h3>
+                                    <span class="skills_number skills-card-img">95%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_Swagger"></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -802,6 +812,38 @@
 
     </main>
 
+        <!-- FAQ Section Start-->
+        <div id="faq">
+            <h1 id="faq-collapse"><span id="frequently-asked">Frequently Asked</span> <span style="color: #bd001c; text-transform: uppercase; font-size: larger;">Questions!</span></h1><hr>
+    
+            <button class="collapsible">What are your future ambitions?</button>
+            <div class="content">
+                <p>Well, I think planning for the future at this age may bring depression if things don't go according to plan because we don't know what the future holds for us, so I am very open to whatever opportunities the future may hold, especially within this company. I pride myself in being flexible and adaptable. I think the best way to plan for the future is to make the most of the present.
+                </p>
+            </div><hr>
+    
+            <button class="collapsible">Can you work under pressure?</button>
+            <div class="content">
+                <p>Yes! I can work under pressure. And I'll make sure that I give my 100%.
+                </p>
+            </div><hr>
+    
+            <button class="collapsible">How Do You Make Decisions?</button>
+            <div class="content">
+                <p>I like to gather as much information as possible to aid in my decision, but I also consider how much time is available to me. Sometimes a decision needs to be made quickly, even if all the information can’t be gathered, so I weigh time versus information. Then I look at possible outcomes and the likely results of my decisions and make the best choice for my team and my organization with the facts available.
+                </p>
+            </div><hr>
+    
+            <button class="collapsible">Where are you see yourself After 5 years?</button>
+            <div class="content">
+                <p>There are so many talented people here. I just want to do a great job and let's see where my talents take me.
+                </p>
+            </div><hr>
+        </div>
+        <!-- FAQ Section Ends-->
+
+
+
     <!-- professional dashboard section -->
     <!-- <section>
         <div id="social-professional">
@@ -855,7 +897,9 @@
                 </div>
                 <div>
                     <p class="footer_copy">it's the mind that can either integrate one's happiness to infinite or differentiate it to zero.</p>
+                    
                     <p class="footer_copy"><i class="uil-copyright"></i> 2023 All rights reserved.</p>
+                    <!-- <span> design & build by Md Zaid Siddique  </span> -->
                 </div>
             </div>
         </div>
@@ -964,6 +1008,24 @@
 
         sr.reveal('.footer', {});
         sr.reveal('.footer_container>div', { interval: 100 });
+
+
+
+//FAQ collaps Section 
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
     </script>
 
 </body>

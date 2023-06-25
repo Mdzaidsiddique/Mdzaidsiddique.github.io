@@ -97,6 +97,18 @@ body.dark-theme {
     --scroll-bar-color: #bd001c;
     /* hsl(var(--hue-color), 12%, 48%); */
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+
+    .collapsible {
+        background-color: #000000;
+        color: #FFFFFFCC;
+    }
+    #frequently-asked{
+        color: #FFFFFFCC;
+    }
+
+    .active, .collapsible:hover {
+        background-color: #bd001c;
+      }
 }
 
 /* ========== Button Dark/Light ========== */
@@ -702,23 +714,26 @@ img {
 }
 
 .skills_spring {
-    width: 75%;
+    width: 90%;
 }
 
 .skills_sql {
-    width: 75%;
+    width: 85%;
 }
 
 .skills_jdbc {
-    width: 75%;
+    width: 80%;
 }
 
 .skills_hibernate {
-    width: 75%;
+    width: 85%;
+}
+.skills_Swagger{
+    width: 95%;
 }
 
 .skills_canva {
-    width: 80%;
+    width: 90%;
 }
 
 .skills_lightroom {
@@ -738,11 +753,11 @@ img {
 }
 
 .skills_postman {
-    width: 60%;
+    width: 90%;
 }
 
 .skills_codepen {
-    width: 50%;
+    width: 80%;
 }
 
 .skills_close .skills_list {
@@ -1036,6 +1051,13 @@ img {
         margin-left: var(--mb-1);
     }
 
+    #faq{
+        text-align: center;
+        align-items: center;
+        margin: auto;
+
+    }
+
     .nav_menu {
         padding: 2rem 0.25rem 4rem;
     }
@@ -1059,15 +1081,22 @@ img {
     .qualification_data {
         gap: 0.5rem;
     }
-    /* #user-detail-intro{
+    #user-detail-intro{
         text-align: left;
-    } */
+    }
 }
 
 /* ====== For medium devices ====== */
 @media screen and (min-width:568px) {
     .home_content {
         grid-template-columns: max-content 1fr 1fr;
+    }
+
+    #faq{
+        text-align: center;
+        align-items: center;
+        margin: auto;
+
     }
 
     .home_data {
@@ -1359,3 +1388,82 @@ img {
 #social-professional img{
     height: 70px;
 } */
+
+/* FAQ Section */
+#faq{
+    width: 80%;
+    /* border: 2px solid yellow; */
+    margin: auto;
+    /* margin: 5%; */
+    text-align: left;
+    /* border: 2px solid red; */
+  }
+  #faq h1{
+    /* color: #c0c0c0; */
+  }
+  
+  #faq-collapse{
+    /* text-transform: uppercase;
+     font-family: gotham-book; */
+    font-size: 1.5rem; 
+     /* color: #bd001c; */
+     margin-bottom: 20px;
+    /* border: 2px solid yellow; */
+  }
+  .collapsible {
+      background-color: #FFFFFFCC;
+      
+      /* color: #000000;------- */
+      cursor: pointer;
+      padding: 1%; 
+      /* padding: 18px; */
+      width: 100%;
+      margin: auto;
+      border: none;
+      text-align: left;
+      outline: none;
+      /* font-size: 15px; */
+      /* text-transform: uppercase;
+      font-family: gotham-book;*/
+      font-size: 1rem; 
+      line-height: 1.8rem; 
+      transition: all .3s ease;
+      position: relative;
+    }
+    
+    .active, .collapsible:hover {
+      background-color: #bd001c;
+    }
+    
+    .collapsible:after {
+      content: '\002B';
+      /* color: #FFFFFFCC; */
+      /* background-color: #bd001c; */
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+    }
+    
+    .active:after {
+      content: "\2212";
+    }
+    
+    .content {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      /* background-color: #c0bebe;; */
+      /* border: 2px solid #c0bebe; */
+
+      /* color:#000000; ----*/
+    }
+  
+    /* position: relative;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: gotham-book;
+    font-size: 2rem;
+    line-height: 1.8rem;
+    color: #4a4a4a;
+    transition: all .3s ease; */
