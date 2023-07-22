@@ -49,6 +49,11 @@
                             <i class="uil uil-graph-bar nav_icon"></i> Statistics
                         </a>
                     </li>
+                    <!-- <li class="nav_item">
+                        <a href="#Achievements" class="nav_link">
+                            <i class="uil uil-graph-bar nav_icon"></i> Achievements
+                        </a>
+                    </li> -->
                     <li class="nav_item">
                         <a href="#contact" class="nav_link nav-link contact">
                             <i class="uil uil-message nav_icon"></i> Contact Me
@@ -187,7 +192,7 @@
             <div class="about_container container grid">
                 <img src="images/WhatsApp Image 2023-06-20 at 23.55.49.jpeg" alt="" class="about_img home-img">
                 <div class="about_data">
-                    <p class="about_description" id="user-detail-intro">A self-motivated, hardworking, Java Backend Developer with a specialization in Java, Spring Boot, SQL, REST APIs, Hibernate, JDBC, Git/Github, HTML, CSS, Javascript, Object-oriented, Proficient in creating servers and databases, designing, developing responsive websites. Ready to develop his skills and contribute to the growth of the organization.
+                    <p class="about_description" id="user-detail-intro">A self-motivated, hardworking, Java Backend Developer with a specialization in Java, Spring Boot, SQL, REST APIs, Hibernate, JDBC, Git, Github, HTML, CSS, Javascript, Object-oriented, Proficient in creating servers and databases, designing, developing responsive websites. Ready to develop his skills and contribute to the growth of the organization.
                     </p>
                     <div class="about_info">
                         <div>
@@ -199,7 +204,7 @@
                             <span class="about_info-name">Completed Projects</span>
                         </div>
                         <div>
-                            <span class="about_info-title">500+</span>
+                            <span class="about_info-title">800+</span>
                             <span class="about_info-name">DSA Problems</span>
                         </div>
                     </div>
@@ -403,6 +408,16 @@
 
                             <div class="skills_data skills-card">
                                 <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">Maven</h3>
+                                    <span class="skills_number skills-card-img">80%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_jdbc"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
                                     <h3 class="skills_name skills-card-name">Hibernate</h3>
                                     <span class="skills_number skills-card-img">85%</span>
                                 </div>
@@ -503,15 +518,7 @@
                                 </div>
                             </div>
 
-                            <!-- <div class="skills_data skills-card">
-                                <div class="skills_titles">
-                                    <h3 class="skills_name skills-card-name">AutoCAD</h3>
-                                    <span class="skills_number skills-card-img">90%</span>
-                                </div>
-                                <div class="skills_bar">
-                                    <span class="skills_percentage skills_autocad"></span>
-                                </div>
-                            </div> -->
+
                         </div>
                     </div>
 
@@ -567,6 +574,27 @@
                                     <span class="skills_percentage skills_codepen"></span>
                                 </div>
                             </div>
+
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">MS Office</h3>
+                                    <span class="skills_number skills-card-img">80%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_codepen"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">Advance Excel</h3>
+                                    <span class="skills_number skills-card-img">80%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_codepen"></span>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -726,6 +754,22 @@
                 <!-- Loading stuff -->
                 Loading the data just for you.
             </div>
+        </section>
+
+
+        <hr class="hr_break_line">
+
+
+                <!-- ========== Achievement ========== -->
+        <section class="portfolio section" id="projects">
+            <h2 class="section_title">Achievements</h2>
+            <span class="section_subtitle">Hey visitor, here is a brief overview of some of my achievements...
+                </span>
+
+            <div id="bannerImage1">
+                 <img style="width: 80%; height: -10%; margin: auto; display: block;" class="bannerImage" id="alif" src="Achievements _ certificates/DocScanner 22-Jul-2023 08-15_1.jpg" alt="banner">
+            </div>
+
         </section>
 
 
@@ -1009,8 +1053,6 @@
         sr.reveal('.footer', {});
         sr.reveal('.footer_container>div', { interval: 100 });
 
-
-
 //FAQ collaps Section 
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -1026,6 +1068,31 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }
+
+//achievements
+let img = document.getElementById('alif')
+    let arr = [
+    "Achievements _ certificates/DocScanner 22-Jul-2023 08-15_1.jpg",
+    "Achievements _ certificates/DocScanner 22-Jul-2023 08-15_2.jpg",
+    "Achievements _ certificates/DocScanner 22-Jul-2023 08-15_3.jpg",
+    "Achievements _ certificates/DocScanner 22-Jul-2023 08-15_4.jpg",
+    "Achievements _ certificates/DocScanner 22-Jul-2023 08-15_5.jpg",
+    "Achievements _ certificates/DocScanner 22-Jul-2023 08-15_6.jpg",
+    "Achievements _ certificates/DocScanner 22-Jul-2023 08-15_6.jpg",
+    "Achievements _ certificates/DocScanner 22-Jul-2023 08-15_8.jpg",
+    "Achievements _ certificates/DocScanner 22-Jul-2023 08-15_9.jpg",
+    "Achievements _ certificates/DocScanner 22-Jul-2023 08-15_11.jpg",
+    "Achievements _ certificates/DocScanner 22-Jul-2023 08-15_12.jpg"
+    ];
+    let j=0;
+    setInterval(function(){
+        img.src = arr[j];
+        j++;
+        if(j==arr.length){
+            j=0
+        }
+    },3000) 
+
     </script>
 
 </body>
